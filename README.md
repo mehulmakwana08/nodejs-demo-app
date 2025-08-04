@@ -48,15 +48,25 @@ The pipeline automatically:
 3. **Deploy Stage**: Deploys to staging environment (on main branch)
 
 ### Pipeline Triggers
-- Push to `main` branch
+- Push to `main` or `develop` branch
 - Pull requests to `main` branch
 
 ### Required Secrets
 
-Configure these secrets in your GitHub repository:
+Configure these secrets in your GitHub repository (Settings → Secrets and variables → Actions):
 
 - `DOCKERHUB_USERNAME`: Your DockerHub username
 - `DOCKERHUB_TOKEN`: Your DockerHub access token
+
+### Troubleshooting GitHub Actions
+
+If the GitHub Actions workflow is not working:
+
+1. **Check workflow file exists**: Ensure `.github/workflows/ci-cd.yml` is in your repository
+2. **Verify secrets**: Make sure `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` are set in repository secrets
+3. **Check permissions**: Ensure the repository has Actions enabled (Settings → Actions → General)
+4. **Branch protection**: If main branch has protection rules, ensure Actions can push
+5. **View logs**: Check the Actions tab in your GitHub repository for detailed error logs
 
 ## API Endpoints
 
