@@ -20,7 +20,7 @@ This is a sample Node.js application demonstrating automated CI/CD pipeline usin
 ### Setup
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/mehulmakwana08/nodejs-demo-app.git
 cd nodejs-demo-app
 
 # Install dependencies
@@ -67,4 +67,4 @@ Configure these secrets in your GitHub repository:
 
 The application is containerized using Alpine Linux for minimal size and security.
 
-Image available at: `your-dockerhub-username/nodejs-demo-app`
+Image available at: `your-actual-dockerhub-username/nodejs-demo-app`

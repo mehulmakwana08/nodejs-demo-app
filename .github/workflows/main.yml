@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  DOCKER_IMAGE: your-dockerhub-username/nodejs-demo-app
+  DOCKER_IMAGE: mehulmakwana172/nodejs-demo-app
   NODE_VERSION: '18'
 
 jobs:
